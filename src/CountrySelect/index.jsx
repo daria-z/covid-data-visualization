@@ -1,7 +1,5 @@
 import React from 'react';
 import Select from 'react-select';
-import countryList from "react-select-country-list";
-
 const options = [
   { value: "chocolate", label: "Chocolate" },
   { value: "strawberry", label: "Strawberry" },
@@ -19,5 +17,5 @@ const options = [
 //   return <Select options={options} value={value} onChange={changeHandler} />;
 // };
 export const CountrySelect = () => {
-  return <Select options={options} />;
+  return <Select options={options} value={value}  />;
 };
